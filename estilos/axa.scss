@@ -1,0 +1,435 @@
+@import url('https://fonts.googleapis.com/css2?family=Space+Mono&display=swap');
+@import url('https://fonts.googleapis.com/css2?family=Exo+2:wght@400&display=swap');
+
+  /* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- GENERAL -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-*/
+
+body{
+    margin: 0;
+    background-color: black;
+}
+
+video{
+    top: 0;
+    left: 0;
+    width: 100%;
+    height: 100vh;
+    object-fit: cover;
+}
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- INDEX  -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- */
+
+    /* -.-.-.-.-.-.-.- MID -.-.-.-.-.-.-.- */
+
+.logo-index{
+    position: relative;
+    margin-top: 100px;
+    text-align: center;
+}
+
+.logo-index img{
+    border-radius: 20px;
+    height: 400px;
+    width: 400px;
+    opacity: 80%;
+}
+   
+    /* -.-.-.-.-.-.-.- BOTONES -.-.-.-.-.-.-.- */
+
+.btnn{
+    width:150px;
+    height: 50px;
+    border-radius: 100px;
+    font-size: 20px;
+    margin: 10px 15px;
+    font-family: 'Exo 2', sans-serif;
+}
+
+.btnn:link,
+.btnn:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btnn:hover {
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(225, 225, 228, 0.596);
+    background-color: #4285f4;
+    color: #fff;
+}
+
+.btnn:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btn-white {
+    background-color: #2b2c2f;
+    color: #3bd8ff;
+    border-color: #e0e9f0;
+}
+
+.btn::after {
+    content: "";
+    display: inline-block;
+    height: 90%;
+    width: 80%;
+    border-radius: 100px;
+    position: absolute;
+    top: 0;
+    left: 12px;
+    z-index: -5;
+    transition: all .4s;
+}
+
+    /* -.-.-.-.-.-.-.- FOOTER -.-.-.-.-.-.-.- */
+
+.footer{
+    margin: 0px;
+    position: relative;
+}
+    
+    /* -.-.-.-.-.-.-.- SLIDER -.-.-.-.-.-.-.- */
+
+.slider-marcas{
+    display: flex;
+    height: auto;
+    margin: auto;
+    overflow: hidden;
+    align-items: center;
+}
+
+.slider-marcas::before{
+    position: absolute;
+    z-index: 99;
+    left: 0;
+    content: "";
+    width: 20%;
+    height: 185px;
+    background: linear-gradient(-90deg, hsla(0, 0%, 96.9%, 0), #f7f7f7);
+}
+    
+.slider-marcas .slider-track{
+    display: flex;
+    animation: scroll 35s linear infinite;
+    -webkit-animation: scroll 35s linear infinite;
+    width: calc(240px * 10);
+}
+
+.slider-marcas .slide{
+    width: 140;
+    height: 120px;
+    padding: 10px;
+    margin: 15px;
+    background-color: white;
+    border-radius: 8px;
+    box-shadow: rgba(50, 50, 93, 0.25) 0px 2px 5px -1px,
+    rgba(0, 0, 0, 0.3) 0px 1px 3px -1px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+
+.slider-marcas .slide img {
+    height: auto;
+    width: 120px;
+    filter: brightness(0) saturate(100%);
+    opacity: 0.25;
+}
+
+    @keyframes scroll {
+        0% {
+          -webkit-transform: translateX(0);
+          transform: translateX(0);
+        }
+      
+        100% {
+          -webkit-transform: translateX(calc(-240px * 5));
+          transform: translateX(calc(-240px * 5));
+        }
+    }
+  
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- LOGIN -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- */
+    
+/* -.-.-.-.-.-.-.- MID -.-.-.-.-.-.-.- */
+@import url('https://rsms.me/inter/inter-ui.css');
+::selection {
+  background: #2D2F36;
+}
+::-webkit-selection {
+  background: #2D2F36;
+}
+::-moz-selection {
+  background: #2D2F36;
+}
+
+.page {
+  display: flex;
+  flex-direction: column;
+  height: calc(100% - 40px);
+  position: absolute;
+  place-content: center;
+  width: calc(100% - 40px);
+}
+@media (max-width: 767px) {
+  .page {
+    height: auto;
+    margin-bottom: 20px;
+    padding-bottom: 20px;
+  }
+}
+.container {
+  display: flex;
+  height: 75%;
+  margin: 0 auto;
+  width: 57%;
+}
+@media (max-width: 767px) {
+  .container {
+    flex-direction: column;
+    height: 630px;
+    width: 320px;
+  }
+}
+.left {
+  background: white;
+  height: calc(100% - 45px);
+  top: 20px;
+  position: relative;
+  width: 70%;
+  font-family: 'Exo 2', sans-serif;
+}
+
+@media (max-width: 767px) {
+  .left {
+    height: 100%;
+    left: 20px;
+    width: calc(100% - 40px);
+    max-height: 270px;
+  }
+}
+.titulo {
+  font-size: 50px;
+  font-weight: 900;
+  margin: 50px 40px 40px;
+}
+.eula {
+  color: #999;
+  font-size: 20px;
+  line-height: 1.5;
+  margin: 40px;
+}
+.right {
+  background: linear-gradient(-90deg, hsl(0, 0%, 13%), #686464);
+  box-shadow: 0px 0px 40px 16px rgba(0,0,0,0.22);
+  color: #F1F1F2;
+  font-family: 'Exo 2', sans-serif;
+  position: relative;
+  width: 90%;
+  display:flex;
+  flex-direction: column;
+}
+
+@media (max-width: 767px) {
+  .right {
+    flex-shrink: 0;
+    height: 100%;
+    width: 100%;
+    max-height: 350px;
+  }
+}
+
+/* -.-.-.-.-.-.-.- FORMULARIO -.-.-.-.-.-.-.- */
+
+.form_inicio {
+  display: flex;
+  flex-direction: column;
+  align-items: center;
+  padding-right: 20%;
+  padding-top: 2%;
+}
+
+ svg {
+  position: absolute;
+  right: 10px;
+}
+
+label {
+  color:  #c2c2c5;
+  display: block;
+  font-size: 21px;
+  height: 16px;
+  margin-top: 40px;
+  margin-bottom: 25px;
+}
+
+input {
+  background: none;
+  border: 0;
+  color: #f2f2f2;
+  line-height: 27px;
+  width: 100%;
+  margin-left: 37px;
+  font-size: 16px;
+  position: relative;
+  z-index: 100;
+}
+
+input:focus{
+  background-color: transparent;
+  outline: transparent
+}
+
+input::-moz-focus-inner { 
+  border: 0; 
+}
+
+.form_inicio i {
+  position: absolute;
+  color: gray;
+  margin-top: 5px;
+  font-size: 22px;
+  margin-left: 7px;
+}
+
+.linea {
+  width: 150%;
+  position: relative;
+  bottom: 46%;
+  right: 8px;
+}
+
+path {
+  fill: none;
+  stroke: url(#linearGradient);;
+  stroke-width: 4;
+  stroke-dasharray: 240 1386;
+}
+
+.form_inicio #fg_pass {
+  color: #a3a5a7;
+  margin-top: 35%;
+  margin-right: 30%;
+  position: relative;
+  font-size: 14px;
+}
+
+/* -.-.-.-.-.-.-.- BOTON -.-.-.-.-.-.-.- */
+ .btnF{
+ width: 76%;
+ font-family: 'Exo 2', sans-serif;
+ font-size: 23px;
+ font-weight: 600;
+ color: #1b3039;
+ padding: 9px 5px;
+ background: #eceff1;
+ border-radius: 50px;
+ cursor: pointer;
+ top: 30%;
+ margin-left: 25%;
+}
+
+.btnF:link,
+.btnF:visited {
+    text-transform: uppercase;
+    text-decoration: none;
+    padding: 15px 40px;
+    display: inline-block;
+    border-radius: 100px;
+    transition: all .2s;
+    position: absolute;
+}
+
+.btnF:hover {
+    transition: all 0.4s ease-in-out;
+    transform: translateY(-3px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.596);
+    background-color: #4285f4;
+    color: #fff;
+}
+
+.btnF:active {
+    transform: translateY(-1px);
+    box-shadow: 0 5px 10px rgba(0, 0, 0, 0.2);
+}
+
+.btnF-white {
+    background-color: #bdbdbd;
+    color: #181b1b;
+    border-color: #e0e9f0;
+}
+
+.btnF-animated {
+    animation: moveInBottom 3s ease-out;
+    animation-fill-mode: backwards;
+}
+
+@keyframes moveInBottom {
+    0% {
+        opacity: 0;
+        transform: translateY(30px);
+    }
+
+    100% {
+        opacity: 1;
+        transform: translateY(0px);
+    }
+}
+
+/* -.-.-.-.-.-.-.- COPYRIGHT LOGIN -.-.-.-.-.-.-.- */
+.copy_login{
+  background-color: black;
+  color: white;
+  position: absolute;
+  margin-left: 350px;
+  margin-top: 610px;
+}
+
+
+/* -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- REGISTRO -.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.-.- */
+
+// "MID" y efectos de "BOTON" reutilizado de LOGIN
+
+.right #form_registro{
+  display: flex;
+  flex-direction: column;
+  align-items: flex-start;
+  height: 100%;
+}
+
+.right #form_registro label{
+  font-size: 16px;
+  padding-left: 5%;
+  margin-top: 10px;
+  margin-bottom: 10px;
+ }
+
+.right #form_registro input{
+  width: 80%;
+  font-size: 13px;
+  height: 25px;
+  border: 2px solid #0ab4b4;
+  border-top: none;
+  border-left: none;
+  border-right: none;
+  background: rgba(20, 20, 20, 0.2);
+  color: white;
+  outline: none;
+  bottom: 0px;
+  
+}
+
+.right #form_registro .btnF{
+  height: 35px;
+  width: 35%;
+  font-size: 14px;
+  padding-top: 3px;
+  right: -7%;
+  top: 10px;
+}
+
